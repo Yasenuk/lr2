@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,700);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("../assets/fonts/icons.eot?spir8e");
+  src: url("../assets/fonts/icons.eot?spir8e#iefix") format("embedded-opentype"), url("../assets/fonts/icons.ttf?spir8e") format("truetype"), url("../assets/fonts/icons.woff?spir8e") format("woff"), url("../assets/fonts/icons.svg?spir8e#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+
+.icon-map:before {
+  content: "\e94b";
+}
+
+.icon-google:before {
+  content: "\ea88";
+}
+
+.icon-telegram:before {
+  content: "\ea95";
+}
+
+.icon-github:before {
+  content: "\eab0";
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  background: #4b7651;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sidebar {
+  flex: 1 1 33.3333333333%;
+  background: #549b7a;
+}
+.sidebar__logo {
+  flex: 1 1 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+.sidebar__logo::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60px;
+  background: #fff;
+  border-radius: 5px;
+  bottom: 0;
+  transform: skewX(-20deg);
+  box-shadow: 6px 3px 5px rgba(35, 62, 38, 0.9294117647);
+}
+.sidebar__logo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background: #4b7651;
+  -webkit-clip-path: polygon(0 0, 0 50%, 50% 100%, 70% 100%, 100% 0);
+          clip-path: polygon(0 0, 0 50%, 50% 100%, 70% 100%, 100% 0);
+}
+.sidebar__img {
+  max-width: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  z-index: 2;
+  filter: drop-shadow(0 0 5px #0c2317);
+}
+.sidebar__content {
+  padding: 60px 20px;
+  color: #1c2c1f;
+}
+.sidebar__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.sidebar__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 20px;
+}
+.sidebar__item {
+  margin: 5px 0;
+  font-weight: 500;
+  font-style: 18px;
+}
+.sidebar__item a {
+  color: #1c2c1f;
+}
+.sidebar__item span {
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.sidebar__item_solid {
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 1.5;
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.sidebar__item_solid:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  background: #1c2c1f;
+  left: 1px;
+  bottom: 0;
+}
+.sidebar__list {
+  margin-bottom: 20px;
+}
+
+.contentbar {
+  flex: 1 1 66.6666666667%;
+  display: flex;
+  justify-content: center;
+  background: #a8d1b3;
+}
+.contentbar__container {
+  padding: 60px 20px;
+}
+.contentbar__title-block {
+  flex: 1 1 66.6666666667%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.contentbar__title {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.contentbar__subtitle {
+  font-size: 22px;
+  font-style: italic;
+  color: #c7c6b8;
+  font-weight: 500;
+}
+.contentbar__section-title {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 700;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 3px solid #000000;
+  border-radius: 1.5px;
+  margin-bottom: 15px;
+}
+.contentbar__section-title:not(:first-child) {
+  margin-top: 30px;
+}
+.contentbar__text {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: justify;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.contentbar__text_long {
+  font-size: 16px;
+  font-weight: 400;
+}
+.contentbar__text_long::first-letter {
+  margin-left: 25px;
+}
+.contentbar__publish {
+  font-size: 14px;
+  color: #464542;
+  padding-left: 15px;
+}
+.contentbar__list {
+  margin: 15px 0;
+  font-size: 16px;
+}
+.contentbar__list_num li {
+  list-style-type: decimal;
+}
+.contentbar__item {
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 1.5;
+}
