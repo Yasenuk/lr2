@@ -6,24 +6,32 @@
 
 .wrapper {
 	width: 100%;
-	height: 100%;
+	width: 100%;
 	font-family: "Inter", sans-serif;
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
 	&__container {
+		max-width: 1440px;
+		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		background: #4b7651;
 	}
 }
 
-.container {
-	display: flex;
-	justify-content: space-between;
-	max-width: 1440px;
-	margin: 0 auto;
-	position: relative;
+.main {
+	flex: 1 1 100%;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1440px;
+		margin: 0 auto;
+		position: relative;
+	}
 }
 
 .sidebar {
@@ -36,16 +44,17 @@
 		justify-content: center;
 		position: relative;
 		margin-top: 20px;
+		padding-bottom: 30px;
 
 		&::before{
 			content:'';
 			position: absolute;
-			width: 60%;
+			width: 70%;
 			height: 60px;
 			background: #fff;
 			border-radius: 5px;
-			bottom: 0;
-			transform: skewX(-20deg);
+			bottom: 30px;
+			transform: skewX(-45deg);
 			box-shadow: 6px 3px 5px #233e26ed;
 		}
 
@@ -54,11 +63,11 @@
 			position: absolute;
 			width: 100%;
 			height: 40px;
-			top: 100%;
+			bottom: -40px;
 			left: 0;
 			z-index: 1;
 			background: #4b7651;
-			clip-path: polygon(0 0, 0 50%, 50% 100%, 70% 100%, 100% 0);
+			clip-path: polygon(0 -1%, 50% 100%, 100% -1%);
 		}
 	}
 
@@ -67,7 +76,7 @@
 		object-fit: contain;
 		object-position: center center;
 		z-index: 2;
-		filter: drop-shadow(0 0 5px #0c2317);
+		filter: drop-shadow(5px 0 0px #4b7651) drop-shadow(-5px 0 0px #4b7651) drop-shadow(0 -2px 0 #4b7651);
 	}
 
 	&__content {
@@ -121,6 +130,23 @@
 					left: 1px;
 					bottom: 0;
 				}
+			}
+		}
+
+		&_link {
+			list-style: none;
+			padding-left: 25px;
+			position: relative;
+
+			&::before{
+				content:'';
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				background: url(../assets/icons/link.svg) no-repeat center center / cover;
+				left: 0;
+				top: 25%;
+				translate: 0 -50%;
 			}
 		}
 	}
