@@ -1,90 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css">
-	<title>Document</title>
-</head>
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="sidebar__logo">
-					<img src="assets/awatar.png" alt="awatar" class="sidebar__img">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<section class="header__awatar">
+						<img src="./assets/awatar.png" alt="awatar" class="header__image" />
+					</section>
+					<section class="header__title-block">
+						<h1 class="header__title">Яценюк Владислав</h1>
+						<p class="header__subtitle">Frontend-розробник</p>
+					</section>
 				</div>
-				<section class="contentbar__title-block">
-					<h1 class="contentbar__title">Яценюк Владислав</h1>
-					<p class="contentbar__subtitle">Frontend-розробник</p>
-				</section>
-			</div>
-		</header>
-		<main class="main">
-			<div class="main__container">
-				<aside class="sidebar">	
-					<div class="sidebar__content">
-						<h3 class="sidebar__title">Особисті дані</h3>
-						<h4 class="sidebar__subtitle">Яценюк Владислав</h4>
-						<ul class="sidebar__list">
-							<li class="sidebar__item"><span class="icon-phone"></span>+380 (68) 037 1811</li>
-							<li class="sidebar__item"><span class="icon-map"></span>м.Івано-Франківськ, вул.Шевченківська, 30</li>
-							<li class="sidebar__item"><span class="icon-google"></span>yasenukv@gmail.com</li>
-							<li class="sidebar__item"><span class="icon-telegram"></span><a href="https://t.me/Vlad_Yatseniuk">@Vlad_Yatseniuk</a></li>
-						</ul>
-						<h3 class="sidebar__title">Навички</h3>
-						<ul class="sidebar__list">
-							<li class="sidebar__item sidebar__item_solid">HTML</li>
-							<li class="sidebar__item sidebar__item_solid">CSS</li>
-							<li class="sidebar__item sidebar__item_solid">JavaScript</li>
-							<li class="sidebar__item sidebar__item_solid">SCSS/SASS</li>
-							<li class="sidebar__item sidebar__item_solid">NodeJS</li>
-							<li class="sidebar__item sidebar__item_solid">Git</li>
-							<li class="sidebar__item sidebar__item_solid">SQL/PostgreSQL</li>
-							<li class="sidebar__item sidebar__item_solid">Firebase</li>
-						</ul>
-						<h3 class="sidebar__title">Портфоліо</h3>
-						<ul class="sidebar__list">
-							<li class="sidebar__item sidebar__item_solid sidebar__item_link"><a href="https://yasenuk.github.io/lr2/">Резюме</a></li>
-						</ul>
-					</div>
-				</aside>
-				<section class="contentbar">
-					<div class="contentbar__container">
-						<h2 class="contentbar__section-title">Про себе</h2>
-						<p class="contentbar__text contentbar__text_long">Я цілеспрямований frontend-розробник із досвідом створення адаптивних та інтерактивних веб-застосунків. Прагну до розвитку у сфері веб-технологій, активно вивчаю нові інструменти та методи роботи. Володію глибокими знаннями в HTML, CSS, JavaScript та сучасних фреймворках. Маю навички роботи з базами даних і бекенд-технологіями, що дозволяє створювати повноцінні веб-рішення.</p>
-						<h2 class="contentbar__section-title">Досвід роботи</h2>
-						<p class="contentbar__text">Frontend-розробник (фріланс)</p>
-						<p class="contentbar__publish">Січень 2023 – теперішній час</p>
-						<ol class="contentbar__list contentbar__list_num">
-							<li class="contentbar__item">Розробка адаптивних веб-застосунків</li>
-							<li class="contentbar__item">Оптимізація продуктивності сайтів</li>
-							<li class="contentbar__item">Робота з API та інтеграція з базами даних</li>
-							<li class="contentbar__item">Використання Node.js для серверної логіки</li>
-						</ol>
-						<p class="contentbar__text">Стажер frontend-розробника</p>
-						<p class="contentbar__publish">Липень 2022 – Грудень 2022</p>
-						<ol class="contentbar__list contentbar__list_num">
-							<li class="contentbar__item">Верстка веб-сторінок за макетами Figma</li>
-							<li class="contentbar__item">Оптимізація коду та SEO-налаштування</li>
-							<li class="contentbar__item">Використання SCSS та модульного підходу в стилізації</li>
-						</ol>
-						<p class="contentbar__text">Участь у проєктах</p>
-						<ul class="contentbar__list">
-							<li class="contentbar__item">Розробка адмін-панелі для управління контентом (React, Firebase)</li>
-							<li class="contentbar__item">Створення багатокористувацького чату (WebSockets, Node.js)</li>
-						</ul>
-						<h2 class="contentbar__section-title">Додаткові навички</h2>
-						<ul class="contentbar__list">
-							<li class="contentbar__item">Робота з Git та GitHub</li>
-							<li class="contentbar__item">Написання SQL-запитів (PostgreSQL, MySQL)</li>
-							<li class="contentbar__item">Базове володіння TypeScript</li>
-							<li class="contentbar__item">Анімація на CSS та JavaScript</li>
-							<li class="contentbar__item">Створення SPA (React, Vue)</li>
-						</ul>
-					</div>
-				</section>
-			</div>
-		</main>
-	</div>
-</body>
+			</header>
+			<main class="main">
+				<div class="main__container">
+					<aside class="side-bar">
+						<div class="side-bar__container">
+							<section class="side-bar__contact">
+								<h3 class="side-bar__title section-title">Особисті дані</h3>
+								<ul class="side-bar__list">
+									<li class="side-bar__item">
+										<span class="icon-phone"></span>
+										<a href="tel:+380680371811">+380 (68) 037 1811</a>
+									</li>
+									<li class="side-bar__item">
+										<span class="icon-map"></span>
+										<address>
+											вул. Шевченківська, 30, Івано-Франківськ, Україна
+										</address>
+									</li>
+									<li class="side-bar__item">
+										<span class="icon-google"></span>
+										<a href="mailto:yasenukv@gmail.com">yasenukv@gmail.com</a>
+									</li>
+									<li class="side-bar__item">
+										<span class="icon-telegram"></span>
+										<a href="https://t.me/Vlad_Yatseniuk">@Vlad_Yatseniuk</a>
+									</li>
+								</ul>
+							</section>
+							<section class="side-bar__skills">
+								<h3 class="side-bar__title section-title">Навички</h3>
+								<ul class="side-bar__list side-bar__list_solid">
+									<li class="side-bar__item">HTML</li>
+									<li class="side-bar__item">CSS</li>
+									<li class="side-bar__item">JavaScript</li>
+									<li class="side-bar__item">SCSS/SASS</li>
+									<li class="side-bar__item">NodeJS</li>
+									<li class="side-bar__item">Git</li>
+									<li class="side-bar__item">SQL/PostgreSQL</li>
+									<li class="side-bar__item">Firebase</li>
+								</ul>
+							</section>
+							<section class="side-bar__portfolio">
+								<h3 class="side-bar__title section-title">Портфоліо</h3>
+								<nav class="side-bar__navigation">
+									<ul class="side-bar__list side-bar__list_link">
+										<li class="side-bar__item">
+											<a href="https://yasenuk.github.io/lr2/">Резюме</a>
+										</li>
+									</ul>
+								</nav>
+							</section>
+						</div>
+					</aside>
+					<section class="main-section">
+						<div class="main-section__container">
+							<section class="main-section__about">
+								<h2 class="main-section__title main-title">Про себе</h2>
+								<p class="main-section__description">
+									Я цілеспрямований frontend-розробник із досвідом створення
+									адаптивних та інтерактивних веб-застосунків. Прагну до
+									розвитку у сфері веб-технологій, активно вивчаю нові
+									інструменти та методи роботи. Володію глибокими знаннями в
+									HTML, CSS, JavaScript та сучасних фреймворках. Маю навички
+									роботи з базами даних і бекенд-технологіями, що дозволяє
+									створювати повноцінні веб-рішення.
+								</p>
+							</section>
+							<section class="main-section__experience">
+								<h3 class="main-section__title section-title">Досвід роботи</h3>
+								<h4 class="main-section__secondary-title">
+									Frontend-розробник (фріланс)
+								</h4>
+								<p class="main-section__time">
+									<time datetime="2023-01-01">Січень 2023</time>
+									- теперішній час
+								</p>
+								<ol class="main-section__num-list">
+									<li class="main-section__item">
+										Розробка адаптивних веб-застосунків
+									</li>
+									<li class="main-section__item">
+										Оптимізація продуктивності сайтів
+									</li>
+									<li class="main-section__item">
+										Робота з API та інтеграція з базами даних
+									</li>
+									<li class="main-section__item">
+										Використання Node.js для серверної логіки
+									</li>
+								</ol>
+								<h4 class="main-section__secondary-title">
+									Стажер frontend-розробника
+								</h4>
+								<p class="main-section__time">
+									<time datetime="2022-07-01">Липень 2022</time>
+									-
+									<time datetime="2022-12-01">Грудень 2022</time>
+								</p>
+								<ol class="main-section__num-list">
+									<li class="main-section__item">
+										Верстка веб-сторінок за макетами Figma
+									</li>
+									<li class="main-section__item">
+										Оптимізація коду та SEO-налаштування
+									</li>
+									<li class="main-section__item">
+										Використання SCSS та модульного підходу в стилізації
+									</li>
+								</ol>
+								<h4 class="main-section__secondary-title">
+									Участь у проєктах
+								</h4>
+								<p class="main-section__time">
+									<time datetime="2024-11-23">Листопад 2024</time>
+									- теперішній час
+								</p>
+								<ul class="main-section__list">
+									<li class="main-section__item">
+										Розробка адмін-панелі для управління контентом (React,
+										Firebase)
+									</li>
+									<li class="main-section__item">
+										Створення багатокористувацького чату (WebSockets, Node.js)
+									</li>
+								</ul>
+							</section>
+							<section class="main-section__added-skills">
+								<h3 class="main-section__title section-title">
+									Додаткові навички
+								</h3>
+								<ul class="main-section__list">
+									<li class="main-section__item">Робота з Git та GitHub</li>
+									<li class="main-section__item">
+										Написання SQL-запитів (PostgreSQL, MySQL)
+									</li>
+									<li class="main-section__item">
+										Базове володіння TypeScript
+									</li>
+									<li class="main-section__item">
+										Анімація на CSS та JavaScript
+									</li>
+									<li class="main-section__item">Створення SPA (React, Vue)</li>
+								</ul>
+							</section>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<p class="footer__text">&copy; Всі права захищені</p>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
