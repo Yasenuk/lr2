@@ -184,7 +184,7 @@
 			padding-left: 25px;
 			position: relative;
 
-			&::before {
+			li::before {
 				content: "";
 				position: absolute;
 				width: 15px;
