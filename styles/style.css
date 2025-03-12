@@ -264,12 +264,13 @@ h1, h2, h3, h4, h5, h6 {
   left: 1px;
   top: 40%;
 }
-.side-bar__list_link {
+.side-bar__item_link {
   list-style: none;
   padding-left: 25px;
+  margin: 5px 0;
   position: relative;
 }
-.side-bar__list_link::before {
+.side-bar__item_link::before {
   content: "";
   position: absolute;
   width: 15px;

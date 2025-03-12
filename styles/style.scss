@@ -178,13 +178,16 @@
 				}
 			}
 		}
+	}
 
+	&__item {
 		&_link {
 			list-style: none;
 			padding-left: 25px;
+			margin: 5px 0;
 			position: relative;
 
-			li::before {
+			&::before {
 				content: "";
 				position: absolute;
 				width: 15px;
@@ -196,9 +199,7 @@
 				translate: 0 -50%;
 			}
 		}
-	}
 
-	&__item {
 		a {
 			font-weight: 500;
 			color: var(--text-dark-color);
